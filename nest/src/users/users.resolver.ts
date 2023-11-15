@@ -1,7 +1,9 @@
 import { CompanyService } from './../company/company.service';
-import { Args, Query, Resolver } from '@nestjs/graphql';
+import { Args, ObjectType, Query, Resolver } from '@nestjs/graphql';
 import { UsersService } from './users.service';
 import { UserModel } from './entity/user.entity';
+
+
 
 @Resolver(  UserModel)
 export class UsersResolver {

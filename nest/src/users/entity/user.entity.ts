@@ -1,7 +1,9 @@
-import { Field } from "@nestjs/graphql";
+import { Field, ObjectType } from "@nestjs/graphql";
 import { CompanyModel } from "src/company/entity/company.entity";
 import { Column, CreateDateColumn, Entity, OneToOne, PrimaryGeneratedColumn, UpdateDateColumn } from "typeorm";
 
+
+@ObjectType()
 @Entity()
 export class UserModel {
 

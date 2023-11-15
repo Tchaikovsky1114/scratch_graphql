@@ -1,4 +1,4 @@
-import { Field } from "@nestjs/graphql";
+import { Field, ObjectType } from "@nestjs/graphql";
 import { Column, CreateDateColumn, Entity, JoinColumn, OneToOne, PrimaryGeneratedColumn, UpdateDateColumn } from "typeorm";
 import { CompanyModel } from "./company.entity";
 
@@ -16,6 +16,7 @@ enum PositionEnum {
   PRESIDENT = "회장"
 }
 
+@ObjectType()
 @Entity()
 export class PositionModel {
 
