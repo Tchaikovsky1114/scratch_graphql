@@ -6,6 +6,7 @@ type CompanyModel {
   createdAt: DateTime!
   id: Float!
   name: String!
+  position: String!
   tel: String!
   updatedAt: DateTime!
 }

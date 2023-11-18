@@ -10,7 +10,7 @@ import { join } from 'path';
 import { CompanyModule } from './company/company.module';
 import { UserModel } from './users/entity/user.entity';
 import { CompanyModel } from './company/entity/company.entity';
-import { PositionModel } from './company/entity/position.entity';
+
 
 
 @Module({
@@ -29,7 +29,7 @@ import { PositionModel } from './company/entity/position.entity';
       password: 'graphql',
       database: 'graphql',
       synchronize: true,
-      entities: [UserModel,CompanyModel,PositionModel]
+      entities: [UserModel,CompanyModel]
     }),
     UsersModule,
     CompanyModule,
